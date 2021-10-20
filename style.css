@@ -67,6 +67,15 @@ ul.inbox{
     height: 100vh;
 }
 
+@media screen and (max-width: 820px){
+    .container{
+        display: none;
+    }
+    body{
+        background-image: url("https://image.shutterstock.com/image-vector/boo-sign-hanging-word-text-260nw-1444255334.jpg");
+    }
+}
+
 @media screen and (max-width: 800px){
     .container{
         display: grid;
@@ -84,6 +93,8 @@ ul.inbox{
         display: none;
     }
 }
+
+
 @media screen and (max-width: 600px){
     .container{
         display: grid;
