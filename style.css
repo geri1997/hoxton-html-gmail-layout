@@ -62,7 +62,7 @@ ul.inbox{
     'footer2 main right-menu right-menu2' 1fr
     'footer main right-menu right-menu2' 1fr
     'footer1 main right-menu right-menu2' 1fr/
-    250px    2fr   0.5fr 100px;
+    250px    2fr   0.5fr 0.1fr;
     width: 100vw;
     height: 100vh;
 }
@@ -79,6 +79,9 @@ ul.inbox{
         250px    2fr   50px ;
         width: 100vw;
         height: 100vh;
+    }
+    .right-menu{
+        display: none;
     }
 }
 @media screen and (max-width: 600px){
