@@ -35,29 +35,63 @@
     grid-area: footer1;
     background-color: violet;
 }
-ul{
+ul.inbox{
     list-style: none;
     color: white;
 }
+
 .inbox li{
     margin: 20px;
 }
-.left-menu{
+.left-menu, .main, .right-menu{
     overflow-y: scroll;
 }
 .user{
     grid-area: user-info;
     background-color: blue;
 }
+.right-menu2{
+    grid-area: right-menu2;
+    background-color: burlywood;
+}
 .container{
     display: grid;
     grid-template: 
-    'logo header user-info' 70px
-    'left-menu main right-menu' 250px 
-    'footer2 main right-menu' 1fr
-    'footer main right-menu' 1fr
-    'footer1 main right-menu' 1fr/
-    250px    2fr   1fr ;
+    'logo header user-info user-info' 70px
+    'left-menu main right-menu right-menu2' 250px 
+    'footer2 main right-menu right-menu2' 1fr
+    'footer main right-menu right-menu2' 1fr
+    'footer1 main right-menu right-menu2' 1fr/
+    250px    2fr   0.5fr 100px;
     width: 100vw;
     height: 100vh;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        display: grid;
+        grid-template: 
+        'logo header user-info' 70px
+        'left-menu main right-menu2' 250px 
+        'footer2 main right-menu2' 1fr
+        'footer main right-menu2' 1fr
+        'footer1 main right-menu2' 1fr/
+        250px    2fr   50px ;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 600px){
+    .container{
+        display: grid;
+        grid-template: 
+        'logo header user-info' 70px
+        'left-menu main right-menu2' 250px 
+        'footer2 main right-menu2' 1fr
+        'footer main right-menu2' 1fr
+        'footer1 main right-menu2' 1fr/
+        50px    2fr   50px ;
+        width: 100vw;
+        height: 100vh;
+    }
 }
